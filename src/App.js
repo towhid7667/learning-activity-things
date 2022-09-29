@@ -1,12 +1,12 @@
 
 import './App.css';
-import Header from './components/header/Header';
+import Actiivities from './components/activity-here/Actiivities';
+
 
 function App() {
   return (
-    <div className="App text-orange-400">
-     <h1>Ki khbr?</h1>
-     <Header />
+    <div className="App">
+     <Actiivities />
     </div>
   );
 }
