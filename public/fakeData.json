@@ -4,7 +4,7 @@
       "img": "https://images.pexels.com/photos/4567481/pexels-photo-4567481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Vocubulary",
       "Days": "5-8",
-      "Time": "60s"
+      "Time": "60"
 
     },
     {
@@ -12,35 +12,35 @@
       "img": "https://images.pexels.com/photos/5399017/pexels-photo-5399017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Speaking",
       "Days": "10-15",
-      "Time": "120s"
+      "Time": "120"
     },
     {
       "id": "63355cecfee0c2f4cc8eb8a5",
       "img": "https://images.pexels.com/photos/1490844/pexels-photo-1490844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Listening",
       "Days": "8-10",
-      "Time": "300s"
+      "Time": "300"
     },
     {
       "id": "63355cecd29a8b1a4a84c829",
       "img": "https://images.pexels.com/photos/936133/pexels-photo-936133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Reading",
       "Days": "14-20",
-      "Time": "200s"
+      "Time": "200"
     },
     {
       "id": "63355cecb7ec237fadf183cb",
       "img": "https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Writting",
       "Days": "10-15",
-      "Time": "500s"
+      "Time": "500"
     },
     {
       "id": "63355cec6cff65e3b97eacdf",
       "img": "https://images.pexels.com/photos/7129713/pexels-photo-7129713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Revising",
       "Days": "8-10",
-      "Time": "700s"
+      "Time": "700"
     }
    
   ]

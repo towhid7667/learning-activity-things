@@ -11,7 +11,7 @@ const Activity = (props) => {
   <div className="card-body items-center text-center">
     <h2 className="card-title">{name}</h2>
     <p>{Days} Days</p>
-    <p className='text-orange'>{Time}</p>
+    <p className='text-orange'>{Time}s</p>
     <div className="card-actions">
       <button className="btn btn-primary w-full capitalize">Add Now</button>
     </div>

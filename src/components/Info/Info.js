@@ -39,12 +39,23 @@ const Info = () => {
 
             <div className="times-here">
                 <h1 className='lg:text-2xl md:text-2xl text-xl font-bold my-5'>Add Break Time</h1>
-                <div className="b-Times lg:flex md:flex bg-slate-200 rounded-lg gap-7 py-5 px-5 justify-center items-center text-center">
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>10</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>20</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>30</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>40</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>50</button>
+                <div className="b-Times lg:flex md:flex bg-slate-200 rounded-lg gap-4 py-5 px-5 justify-center items-center text-center">
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>10s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>20s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>30s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>40s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-0'>50s</button>
+                </div>
+            </div>
+            <div>
+                <h1>Activity Details</h1>
+                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5'>
+                    <h1 className='text-xl font-bold'>Activity Time</h1>
+                    <p className='font-bold'>200s</p>
+                </div>
+                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5'>
+                    <h1 className='text-xl font-bold'>Break Time</h1>
+                    <p className='font-bold'>200s</p>
                 </div>
             </div>
         </div>
