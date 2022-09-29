@@ -1,7 +1,10 @@
 import React from 'react';
 
 const Activity = (props) => {
+    const { addTime } = props;
+    
     const {img, name, Days, Time} = props.activity;
+    
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
@@ -13,7 +16,7 @@ const Activity = (props) => {
     <p>{Days} Days</p>
     <p className='text-orange'>{Time}s</p>
     <div className="card-actions">
-      <button className="btn btn-primary w-full capitalize">Add Now</button>
+      <button className="btn btn-primary w-full capitalize" onClick={()=> addTime(props.activity)}>Add Now</button>
     </div>
   </div>
 </div>
