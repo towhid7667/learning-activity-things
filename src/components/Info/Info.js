@@ -2,22 +2,39 @@ import React from 'react';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react';
+
+
 
 
 const Info = (props) => {
     const {newTime} = props;
     const [bvalue , setBvalue] = useState([0]);
+     
+    const toastHere = () => {
+        toast.success('Thanks For Completing !', {
+            position: toast.POSITION.BOTTOM_RIGHT
+        });
+    }
+
     
 
  
    
-    const breakTime = e => {
-        const buttonValue = e.target.value;
+const breakTime = e => {
+       const buttonValue = e.target.value;
        setBvalue(buttonValue);
        localStorage.setItem('Break Time', buttonValue);
-       
-        
+}
+
+useEffect(() => {
+  const items = JSON.parse(localStorage.getItem('Break Time'));
+  if (items) {
+   setBvalue(items);
   }
+}, []);
 
   
  
@@ -31,6 +48,8 @@ const Info = (props) => {
         total = parseInt(total) + parseInt(time.Time);
 
     }
+
+
 
     
     
@@ -90,7 +109,8 @@ const Info = (props) => {
                 </div>
             </div>
             <div className='flex justify-center items-center'>
-            <button className='bg-purple-700 text-xl lg:text-2xl md:text-2xl text-white font-bold lg:px-10 px-4 py-3 rounded-lg hover:bg-purple-900'>Completed</button>
+            <button className='bg-purple-700 text-xl lg:text-2xl md:text-2xl text-white font-bold lg:px-10 px-4 py-3 rounded-lg hover:bg-purple-900' onClick={toastHere}>Completed</button>
+            <ToastContainer/>
             </div>
             
         </div>
