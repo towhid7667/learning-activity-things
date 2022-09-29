@@ -14,7 +14,7 @@ const Info = (props) => {
     const breakTime = e => {
         const buttonValue = e.target.value;
        setBvalue(buttonValue);
-       
+       localStorage.setItem('Break Time', buttonValue);
        
         
   }
