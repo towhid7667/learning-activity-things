@@ -48,16 +48,20 @@ const Info = () => {
                 </div>
             </div>
             <div>
-                <h1>Activity Details</h1>
-                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5'>
+                <h1 className='text-2xl font-bold my-5'>Activity Details</h1>
+                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5 text-center'>
                     <h1 className='text-xl font-bold'>Activity Time</h1>
-                    <p className='font-bold'>200s</p>
+                    <p className='font-bold my-3'>200s</p>
                 </div>
-                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5'>
+                <div className='lg:flex md:flex bg-slate-200 px-4 py-3 rounded-lg justify-around my-5 text-center'>
                     <h1 className='text-xl font-bold'>Break Time</h1>
-                    <p className='font-bold'>200s</p>
+                    <p className='font-bold my-3'>200s</p>
                 </div>
             </div>
+            <div className='flex justify-center items-center'>
+            <button className='bg-purple-700 text-xl lg:text-2xl md:text-2xl text-white font-bold lg:px-10 px-4 py-3 rounded-lg'>Completed</button>
+            </div>
+            
         </div>
     );
 };
