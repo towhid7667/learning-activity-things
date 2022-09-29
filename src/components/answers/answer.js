@@ -3,7 +3,7 @@ import React from 'react';
 const Answer = () => {
     return (
         <div>
-        <div className=' grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto lg:w-10/12 md:w- 8/12 w-6/12 gap-10'>
+        <div className=' grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto  w-11/12 gap-10'>
             <div className='text-center p-10'>
                 <h1 className='text-xl font-bold'>How useEffects Works?</h1>
                 <p>By using this Hook, we tell React that our component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.</p>
