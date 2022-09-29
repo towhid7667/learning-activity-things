@@ -1,14 +1,28 @@
 import React from 'react';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+
 
 const Info = (props) => {
     const {newTime} = props;
-    const {breakTime} =props;
-    const[bvalue, setBvalue] = useState([])
+    const [bvalue , setBvalue] = useState([0]);
     
-    
-    
+
+ 
+   
+    const breakTime = e => {
+        const buttonValue = e.target.value;
+       setBvalue(buttonValue);
+       
+       
+        
+  }
+
+  
+ 
+
+
 
     
     let total = 0;
@@ -18,16 +32,9 @@ const Info = (props) => {
 
     }
 
-
-   
-        
-  }
-  const breakTime = e => {
-    const buttonValue = e.target.value;
-    return buttonValue;
-  }
-
-return (
+    
+    
+    return (
         <div>
             <div className='profile-area lg:flex lg:gap-3 lg:items-center  md:items-center my-10 '>
                 <div className="avatar online">
@@ -64,11 +71,11 @@ return (
             <div className="times-here">
                 <h1 className='lg:text-2xl md:text-2xl text-xl font-bold my-5'>Add Break Time</h1>
                 <div className="b-Times lg:flex  bg-slate-200 rounded-lg gap-4 py-5 px-5 justify-center items-center text-center">
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={()=> breakTime(e)}>10s</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3'>20s</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3'>30s</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3'>40s</button>
-                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3'>50s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={(e)=> breakTime(e)} value="10">10s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={(e)=> breakTime(e)} value="20">20s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={(e)=> breakTime(e)} value="30">30s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={(e)=> breakTime(e)} value="40">40s</button>
+                    <button className='rounded-[50%]  bg-white p-3 hover:bg-violet-400 hover:text-white font-bold my-3 lg:my-0 md:my-3' onClick={(e)=> breakTime(e)} value="50">50s</button>
                 </div>
             </div>
             <div>
@@ -79,7 +86,7 @@ return (
                 </div>
                 <div className='lg:flex  bg-slate-200 px-4 py-3 rounded-lg justify-around my-5 text-center items-center'>
                     <h1 className='text-xl font-bold'>Break Time</h1>
-                    <p className='font-bold my-3'>200s</p>
+                    <p className='font-bold my-3'>{bvalue}s</p>
                 </div>
             </div>
             <div className='flex justify-center items-center'>

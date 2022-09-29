@@ -7,6 +7,9 @@ import Info from './../Info/Info';
 const Actiivities = () => {
     const [activities, setActivities] = useState([]);
     const [newTime, setNewTime] = useState([]);
+    
+    
+    
 
     useEffect(()=>{
         fetch("fakeData.json")
@@ -19,7 +22,7 @@ const Actiivities = () => {
         setNewTime(timeshere);
     }
 
-
+   
 
     return (
         <div className='grid grid-cols-[4fr,1fr] bg-slate-200'>
@@ -34,7 +37,7 @@ const Actiivities = () => {
 
             </div>
             <div className='info-here w-3/12 md:w-4/12 lg:w-3/12 bg-white px-20 py-8 absolute right-0 flex flex-col items-center justify-center'>
-                <Info newTime = {newTime}/>
+                <Info newTime = {newTime} />
             </div>
             
         </div>
